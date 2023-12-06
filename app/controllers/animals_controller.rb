@@ -15,7 +15,7 @@ class AnimalsController < ApplicationController
         if animal.valid?    
             render json: animal
         else
-            render animal.errors
+            render json: animal.errors
         end
     end
     
